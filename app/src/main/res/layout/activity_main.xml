@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <include
+        layout="@layout/app_bar_buycar_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        tl:tl_indicator_color="@color/base_color"
+        tl:tl_textSelectColor="@color/base_color"
+        tl:tl_textUnselectColor="#66000000"
+        tl:tl_underline_color="@color/base_color"
+        tl:tl_underline_height="1dp"/>
+</LinearLayout>

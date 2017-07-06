@@ -1,0 +1,207 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:tl="http://schemas.android.com/apk/res-auto"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@color/grey"
+                                     android:fitsSystemWindows="true"
+                                     android:orientation="vertical">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:background="@color/c_FBEAAF"
+            android:drawableLeft="@drawable/ic_appointtime"
+            android:drawablePadding="30px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="已预约，等待到店"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/personal_headportrait"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@mipmap/person"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="王先生"
+                    android:textColor="@color/c_333333"
+                    android:textSize="40px"/>
+
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    android:gravity="right"
+                    android:text="1000000000"
+                    android:textColor="@color/c_333333"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="20px"
+                    android:orientation="vertical">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_chalou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="老开心茶楼"
+                            android:textColor="@color/c_333333"
+                            android:textSize="40px"/>
+
+                        <TextView
+                            android:id="@+id/tv_self"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:text="本店"
+                            android:textColor="@color/red"
+                            android:textSize="35px"/>
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_houseNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:text="包间数: 1间"
+                        android:textColor="@color/c_666666"/>
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:text="时段: 11月30日 13:30-17:30"
+                        android:textColor="@color/c_666666"/>
+
+                    <TextView
+                        android:id="@+id/tv_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:text="备注: 6个人要带麻将桌的包间"
+                        android:textColor="@color/c_666666"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="30px">
+            <TextView
+                android:id="@+id/tv_appoint_order"
+                android:layout_width="match_parent"
+                android:text="预约号: 1111111111111"
+                android:textColor="@color/c_666666"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_appoint_time"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20px"
+                android:text="预约时间: 2016-11-11"
+                android:textColor="@color/c_666666"
+                android:layout_height="wrap_content"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="30px">
+
+        <Button
+            android:id="@+id/action_appoint_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:layout_marginLeft="@dimen/px_20"
+            android:background="@drawable/btn_auction_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消预约"
+            android:textSize="@dimen/txt_size"
+            />
+        <Button
+            android:id="@+id/bt_arrive"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/px_20"
+            android:background="@drawable/btn_auction_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="已经到店"
+            android:textSize="@dimen/txt_size"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

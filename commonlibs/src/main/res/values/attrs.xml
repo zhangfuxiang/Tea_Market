@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutoTabLayout">
+        <attr name="auto_textSize_base_width" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="StatusLayout">
+        <attr name="emptyLayout" format="reference"></attr>
+        <attr name="errorLayout" format="reference"></attr>
+        <attr name="noNetLayout" format="reference"></attr>
+        <attr name="loadingLayout" format="reference"></attr>
+    </declare-styleable>
+
+</resources>

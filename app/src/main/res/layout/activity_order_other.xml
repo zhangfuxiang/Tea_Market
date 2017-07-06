@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_bar_start_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddee3" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="30px">
+
+            <EditText
+                android:id="@+id/et_shop_name_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45px"
+                android:layout_marginRight="45px"
+                android:background="@drawable/et_village_border"
+                android:gravity="center"
+                android:hint="输入店铺名称"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="34px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/arl_now_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_buycar_selector"
+            android:minHeight="125px"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="30px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cha_more_into" />
+
+            <TextView
+                android:id="@+id/tv_now_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv1"
+                android:gravity="center_vertical"
+                android:minHeight="125px"
+                android:paddingBottom="45px"
+                android:paddingLeft="45px"
+                android:paddingRight="45px"
+                android:paddingTop="45px"
+                android:text="当前地址：北京市朝阳区广顺南大街"
+                android:textColor="#999999"
+                android:textSize="40px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="30px"
+            android:background="#dddee3" />
+
+        <com.superrecycleview.superlibrary.recycleview.SuperRecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddee3" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

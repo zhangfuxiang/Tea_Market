@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="45px"
+            android:paddingRight="45px">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_cancel_dialog" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="45px"
+            android:paddingRight="45px">
+
+            <ImageView
+                android:layout_width="65px"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_ok_dialog" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="45px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.delta.smt.ui.drinktea.order_this.WheelView
+                android:id="@+id/mWheelViewStartHour"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                app:isCyclic="false"
+                app:itemNumber="5"
+                app:lineColor="#dddee3"
+                app:lineHeight="1px"
+                app:noEmpty="true"
+                app:normalTextColor="#999999"
+                app:normalTextSize="40px"
+                app:selectedTextColor="#333333"
+                app:selectedTextSize="40px" />
+
+            <com.delta.smt.ui.drinktea.order_this.WheelView
+                android:id="@+id/mWheelViewStartMinute"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                app:isCyclic="false"
+                app:itemNumber="5"
+                app:lineColor="#dddee3"
+                app:lineHeight="1px"
+                app:noEmpty="true"
+                app:normalTextColor="#999999"
+                app:normalTextSize="40px"
+                app:selectedTextColor="#333333"
+                app:selectedTextSize="40px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#dddee3" />
+
+            <com.delta.smt.ui.drinktea.order_this.WheelView
+                android:id="@+id/mWheelViewEndHour"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                app:isCyclic="false"
+                app:itemNumber="5"
+                app:lineColor="#dddee3"
+                app:lineHeight="1px"
+                app:noEmpty="true"
+                app:normalTextColor="#999999"
+                app:normalTextSize="40px"
+                app:selectedTextColor="#333333"
+                app:selectedTextSize="40px" />
+
+            <com.delta.smt.ui.drinktea.order_this.WheelView
+                android:id="@+id/mWheelViewEndMinute"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                app:isCyclic="false"
+                app:itemNumber="5"
+                app:lineColor="#dddee3"
+                app:lineHeight="1px"
+                app:noEmpty="true"
+                app:normalTextColor="#999999"
+                app:normalTextSize="40px"
+                app:selectedTextColor="#333333"
+                app:selectedTextSize="40px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180px"
+            android:text="时"
+            android:textColor="#333333"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="450px"
+            android:text="分"
+            android:textColor="#333333"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="720px"
+            android:text="时"
+            android:textColor="#333333"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="990px"
+            android:text="分"
+            android:textColor="#333333"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="112px"
+            android:layout_marginTop="46px"
+            android:text="开始时间"
+            android:textColor="#666666"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="110px"
+            android:layout_marginTop="46px"
+            android:text="结束时间"
+            android:textColor="#666666"
+            android:textSize="40px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

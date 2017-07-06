@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/group_purchase_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</com.zhy.autolayout.AutoLinearLayout>

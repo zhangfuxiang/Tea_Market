@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_start_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="126px"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#999999" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_add_my_buy_car"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_add_my_buy_car_selector"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="加入到购物车"
+                    android:textColor="#FFFFFF"
+                    android:textSize="37px" />
+
+                <TextView
+                    android:id="@+id/btn_buy_now"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_give_price"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="立即购买"
+                    android:textColor="#FFFFFF"
+                    android:textSize="37px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_layout"
+            android:scrollbars="none">
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1500px">
+                <android.support.design.widget.FloatingActionButton
+                    android:visibility="gone"
+                    android:id="@+id/btn_product_refer_buy"
+                    android:layout_width="155px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="200dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/btn_shoppingcart_selector"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/write"
+                    app:backgroundTint="#FF6000"
+                    app:borderWidth="0dp"
+                    app:fabSize="normal"
+                    app:useCompatPadding="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="11dp" />
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#CCCCCC" />
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="896px"
+                        android:background="#FFFFFF" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#CCCCCC" />
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF">
+
+                        <TextView
+                            android:id="@+id/tv_product_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="43px"
+                            android:layout_marginRight="43px"
+                            android:layout_marginTop="48px"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:text="武夷岩茶 ZHP0860-125 2016春茶"
+                            android:textColor="#333333"
+                            android:textSize="37px" />
+
+                        <TextView
+                            android:id="@+id/tv_product_system_price_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/tv_product_name"
+                            android:layout_below="@id/tv_product_name"
+                            android:layout_marginTop="33px"
+                            android:includeFontPadding="false"
+                            android:text="系统价格："
+                            android:textColor="#666666"
+                            android:textSize="37px" />
+
+                        <TextView
+                            android:id="@+id/tv_product_system_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/tv_product_system_price_label"
+                            android:layout_toRightOf="@id/tv_product_system_price_label"
+                            android:includeFontPadding="false"
+                            android:text="¥438.00"
+                            android:textColor="#FF6000"
+                            android:textSize="37px" />
+
+
+                        <TextView
+                            android:id="@+id/tv_product_sale_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/tv_product_system_price_label"
+                            android:layout_marginBottom="27px"
+                            android:layout_marginRight="43px"
+                            android:layout_marginTop="33px"
+                            android:includeFontPadding="false"
+                            android:text="销量18"
+                            android:textColor="#999999"
+                            android:textSize="34px" />
+
+                        <TextView
+                            android:id="@+id/tv_product_source_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/tv_product_sale_amount"
+                            android:layout_alignLeft="@id/tv_product_name"
+                            android:includeFontPadding="false"
+                            android:text="来源："
+                            android:textColor="#666666"
+                            android:textSize="34px" />
+
+                        <TextView
+                            android:id="@+id/tv_product_source"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/tv_product_sale_amount"
+                            android:layout_toRightOf="@id/tv_product_source_label"
+                            android:includeFontPadding="false"
+                            android:text="老开心茶楼"
+                            android:textColor="#666666"
+                            android:textSize="34px" />
+
+                        <com.flyco.tablayout.CommonTabLayout
+                            android:id="@+id/tl_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="127px"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignTop="@+id/tv_product_sale_amount"
+                            android:background="#ffffff"
+                            tl:tl_indicator_color="@color/base_color"
+                            tl:tl_indicator_width="496px"
+                            tl:tl_textSelectColor="@color/base_color"
+                            tl:tl_textUnselectColor="#333333"
+                            tl:tl_textsize="37px"
+                            tl:tl_underline_color="#333333"
+                            tl:tl_underline_height="0px" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#CCCCCC" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="32px"
+                        android:background="#CCCCCC" />
+
+
+                    <com.delta.smt.ui.find.auctionHouseDetail.AdaptiveViewPager
+                        android:id="@+id/vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </ScrollView>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

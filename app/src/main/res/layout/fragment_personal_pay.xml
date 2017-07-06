@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_40"
+        android:layout_marginBottom="@dimen/px_200"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0"
+            android:layout_weight="1"
+            android:textSize="@dimen/px_40"
+            android:gravity="center"
+            android:text="扫描此二维码，向我付钱"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0"
+            android:layout_weight="2"
+            />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

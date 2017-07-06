@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bac"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/vs_nd_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/viewstatus_no_data_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:text="没有数据"
+            android:textColor="#aeaeae"
+            android:textSize="14sp" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.delta.commonlibs.widget.statusLayout.StatusLayout
+        android:id="@+id/sl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.superrecycleview.superlibrary.recycleview.SuperRecyclerView
+            android:id="@+id/purchase_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bac" />
+    </com.delta.commonlibs.widget.statusLayout.StatusLayout>
+
+
+</com.zhy.autolayout.AutoFrameLayout>

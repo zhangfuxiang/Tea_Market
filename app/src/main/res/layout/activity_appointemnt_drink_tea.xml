@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/room_not_sign"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/appoint_drink_status"
+            android:layout_width="@dimen/px_400"
+            android:layout_height="@dimen/px_400"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_320"
+            android:src="@mipmap/waitting_to_sign" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_50"
+            android:gravity="center_horizontal"
+            android:text="当前未接入包间遥控系统"
+            android:textColor="@color/txt_color_999"
+            android:textSize="@dimen/txt_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="请询问店铺服务员"
+            android:textColor="@color/txt_color_999"
+            android:textSize="@dimen/txt_size" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="@dimen/px_950"
+            android:layout_height="@dimen/px_120"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_100"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="输入房间号或桌号"
+                android:textColor="@color/txt_color_999"
+                android:textSize="@dimen/txt_size" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/room_sign"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_180"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/px_60"
+                android:layout_height="@dimen/px_60"
+                android:layout_marginLeft="@dimen/px_60"
+                android:src="@mipmap/check" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_60"
+                android:text="当前已经接入包间遥控系统，包间（桌位）号：16"
+                android:textColor="@color/txt_color_999"
+                android:textSize="@dimen/txt_size" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/px_320"
+            android:layout_height="@dimen/px_350"
+            android:layout_marginLeft="@dimen/px_176"
+            android:layout_marginTop="@dimen/px_200"
+            android:background="@drawable/text_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="60px"
+            android:text="呼叫服务员"
+            android:textColor="@color/txt_color_999"
+            android:textSize="60px" />
+
+        <TextView
+            android:layout_width="@dimen/px_320"
+            android:layout_height="@dimen/px_350"
+            android:layout_marginLeft="@dimen/px_584"
+            android:layout_marginTop="-350px"
+            android:background="@drawable/text_btn"
+            android:clickable="true"
+            android:padding="90px"
+            android:text="点赞服务"
+            android:textColor="@color/txt_color_999"
+            android:textSize="60px" />
+
+        <TextView
+            android:layout_width="@dimen/px_320"
+            android:layout_height="@dimen/px_350"
+            android:layout_marginLeft="@dimen/px_176"
+            android:layout_marginTop="88px"
+            android:background="@drawable/text_btn"
+            android:clickable="true"
+            android:padding="90px"
+            android:text="点赞服务"
+            android:textColor="@color/txt_color_999"
+            android:textSize="60px" />
+
+        <TextView
+            android:layout_width="@dimen/px_320"
+            android:layout_height="@dimen/px_350"
+            android:layout_marginLeft="@dimen/px_584"
+            android:layout_marginTop="-350px"
+            android:background="@drawable/text_btn"
+            android:clickable="true"
+            android:padding="90px"
+            android:text="结账买单"
+            android:textColor="@color/txt_color_999"
+            android:textSize="60px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <TextView
+            android:id="@+id/new_consignee_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/txt_action_selector_green_bac"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="开始使用"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_size" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

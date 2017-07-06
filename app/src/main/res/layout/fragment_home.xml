@@ -1,0 +1,347 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.delta.smt.ui.HomePage.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <me.hwang.library.widgit.SmartRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/smartRefreshLayout"
+        app:enablePullDown="true"
+        app:enablePullUp="false"
+        android:background="@color/bac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bac">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/vp_news"
+                android:layout_width="match_parent"
+                android:layout_height="500px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/waiting_to_do_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/scroll_news_iv"
+                        android:layout_width="160px"
+                        android:layout_height="160px"
+                        android:layout_marginLeft="40px"
+                        android:background="@mipmap/paocha" />
+
+                    <TextView
+                        android:layout_width="2px"
+                        android:layout_height="160px"
+                        android:layout_marginLeft="@dimen/px_30"
+                        android:background="@color/line" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:maxLines="1"
+                            android:layout_marginLeft="20px"
+                            android:textColor="@color/txt_color_333"
+                            android:id="@+id/tea_one_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:gravity="bottom"
+                            android:text="每日头条"
+                            android:textSize="@dimen/txt_size" />
+
+                        <TextView
+                            android:layout_height="0dp"
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
+                            />
+
+                        <TextView
+                            android:maxLines="1"
+                            android:layout_marginLeft="20px"
+                            android:id="@+id/tea_two_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:gravity="top"
+                            android:text="每日头条"
+                            android:textColor="@color/txt_color_333"
+                            android:textSize="@dimen/txt_size" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/scroll_daily_iv"
+                        android:layout_width="160px"
+                        android:layout_height="160px"
+                        android:layout_marginLeft="40px"
+                        android:background="@mipmap/teameeting" />
+
+                    <TextView
+                        android:layout_width="2px"
+                        android:layout_height="160px"
+                        android:layout_marginLeft="@dimen/px_30"
+                        android:background="@color/line" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:maxLines="1"
+                            android:layout_marginLeft="20px"
+                            android:textColor="@color/txt_color_333"
+                            android:id="@+id/daily_one_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:gravity="bottom"
+                            android:text="每日头条"
+                            android:textSize="@dimen/txt_size" />
+
+                        <TextView
+                            android:layout_height="0dp"
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
+                            />
+
+                        <TextView
+                            android:maxLines="1"
+                            android:layout_marginLeft="20px"
+                            android:id="@+id/daily_two_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:gravity="top"
+                            android:text="每日头条"
+                            android:textColor="@color/txt_color_333"
+                            android:textSize="@dimen/txt_size" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_200"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/time_rv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@mipmap/ic_tea_circle2"
+                        android:layout_marginLeft="@dimen/px_25"
+                        android:id="@+id/tea_circle_iv"
+                        android:layout_height="@dimen/px_40"
+                        android:layout_width="@dimen/px_40"
+                        />
+                    <TextView
+                        android:textSize="@dimen/px_34"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="茶圈子"
+                        android:textColor="@color/greed"
+                        />
+
+                    <TextView
+                        android:id="@+id/circly_more"
+                        android:padding="@dimen/px_30"
+                        android:textSize="@dimen/px_34"
+                        android:text="更多"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/line" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/tea_circle_rv"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="@dimen/px_20"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#005132" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="5dp"
+                    android:text="周边活动" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/back"
+                android:id="@+id/tea_near_rv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="@dimen/px_20"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#005132" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="5dp"
+                    android:text="猜你喜欢" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/back"
+                android:id="@+id/tea_gust_like_rv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</me.hwang.library.widgit.SmartRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

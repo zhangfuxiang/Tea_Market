@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="196px"
+    android:background="#FFFFFF">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/auction_head_image_layout"
+        android:layout_width="158px"
+        android:layout_height="158px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="43px">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_auction_head_image"
+            android:layout_width="158px"
+            android:layout_height="158px"
+            app:civ_border_color="#00FFFFFF"
+            app:civ_border_width="1px"
+            app:civ_fill_color="#FFFFFF" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_auction_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32px"
+        android:layout_marginTop="43px"
+        android:layout_toRightOf="@id/auction_head_image_layout"
+        android:includeFontPadding="false"
+        android:text="王先生(13812345678)"
+        android:textColor="#333333"
+        android:textSize="37px" />
+
+    <TextView
+        android:id="@+id/auction_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_auction_person_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43px"
+        android:layout_toRightOf="@id/auction_head_image_layout"
+        android:includeFontPadding="false"
+        android:text="出价："
+        android:textColor="#999999"
+        android:textSize="34px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/auction_price_label"
+        android:layout_toRightOf="@id/auction_price_label"
+        android:includeFontPadding="false"
+        android:text=""
+        android:textColor="#FF6000"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/tv_auction_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/auction_price_label"
+        android:layout_toRightOf="@id/auction_price_label"
+        android:includeFontPadding="false"
+        android:text=""
+        android:textColor="#FF6000"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/tv_auction_price_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_auction_person_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="43px"
+        android:includeFontPadding="false"
+        android:text="2016-12-12 12:22:22"
+        android:textColor="#999999"
+        android:textSize="34px" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="43px"
+        android:background="#CCCCCC" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

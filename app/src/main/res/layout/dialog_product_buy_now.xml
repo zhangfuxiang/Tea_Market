@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="724px"
+    android:background="#00FFFFFF">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85px"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CCCCCC" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="194px">
+
+            <ImageView
+                android:id="@+id/iv_dialog_close"
+                android:layout_width="112px"
+                android:layout_height="112px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17px"
+                android:padding="26px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cha_delete" />
+
+            <TextView
+                android:id="@+id/tv_dialog_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="314px"
+                android:layout_marginTop="47px"
+                android:includeFontPadding="false"
+                android:text="¥438.00"
+                android:textColor="#FF6000"
+                android:textSize="37px" />
+
+            <TextView
+                android:id="@+id/tv_dialog_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_dialog_product_price"
+                android:layout_below="@id/tv_dialog_product_price"
+                android:layout_marginTop="33px"
+                android:includeFontPadding="false"
+                android:text="武夷岩茶 ZHP0860-125 2016春茶"
+                android:textColor="#333333"
+                android:textSize="34px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="40px"
+            android:background="#CCCCCC" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="126px">
+
+            <TextView
+                android:id="@+id/tv_buy_amount_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:includeFontPadding="false"
+                android:text="购买数量"
+                android:textColor="#333333"
+                android:textSize="37px" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_buy_amount_label">
+
+                <ImageView
+                    android:id="@+id/btn_add_buy_amount"
+                    android:layout_width="103px"
+                    android:layout_height="63px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="43px"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cha_add_red" />
+
+                <EditText
+                    android:id="@+id/et_buy_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_toLeftOf="@id/btn_add_buy_amount"
+                    android:background="#FFFFFF"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px"
+                    android:text="1"
+                    android:textColor="#333333"
+                    android:textSize="37px" />
+
+                <ImageView
+                    android:id="@+id/btn_reduce_buy_amount"
+                    android:layout_width="103px"
+                    android:layout_height="63px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/et_buy_amount"
+                    android:paddingLeft="43px"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cha_add_red_press" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="40px"
+            android:background="#CCCCCC" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btn_dialog_commit_buy"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_join_suject_selector"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="#FFFFFF"
+            android:textSize="37px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_dialog_product_picture"
+        android:layout_width="238px"
+        android:layout_height="238px"
+        android:layout_marginLeft="40px"
+        android:scaleType="centerCrop" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

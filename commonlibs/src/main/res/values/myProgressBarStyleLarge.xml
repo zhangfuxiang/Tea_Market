@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<style name="myProgressBarStyleLarge" >
+    
+　　<item name="android:indeterminateDrawable">@drawable/progress_large_loading</item>
+　　 <item name="android:minWidth">100dp</item>
+　　<item name="android:maxWidth">100dp</item>
+　　<item name="android:minHeight">100dp</item>
+　　<item name="android:maxHeight">100dp</item> 
+</style>
+</resources>

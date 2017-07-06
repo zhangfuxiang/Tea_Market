@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CCCCCC" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_sort_by_sale_amount"
+            android:layout_width="match_parent"
+            android:layout_height="127px"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_sort_by_sale_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:paddingLeft="43px"
+                android:text="默认排序（按销量）"
+                android:textColor="#666666"
+                android:textSize="37px" />
+
+            <ImageView
+                android:id="@+id/iv_sale_amount_check"
+                android:layout_width="43px"
+                android:layout_height="37px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="43px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cha_affirm"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="43px"
+            android:background="#CCCCCC" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_sort_by_price_up"
+            android:layout_width="match_parent"
+            android:layout_height="127px"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_sort_by_price_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:paddingLeft="43px"
+                android:text="价格从低到高"
+                android:textColor="#666666"
+                android:textSize="37px" />
+
+            <ImageView
+                android:id="@+id/iv_price_up_check"
+                android:layout_width="43px"
+                android:layout_height="37px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="43px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cha_affirm"
+                android:visibility="gone"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="43px"
+            android:background="#CCCCCC" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_sort_by_price_down"
+            android:layout_width="match_parent"
+            android:layout_height="127px"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_sort_by_price_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:paddingLeft="43px"
+                android:text="价格从高到低"
+                android:textColor="#666666"
+                android:textSize="37px" />
+
+            <ImageView
+                android:id="@+id/iv_price_down_check"
+                android:layout_width="43px"
+                android:layout_height="37px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="43px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cha_affirm"
+                android:visibility="gone"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CCCCCC" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/popup_other_region"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.delta.smt.ui.find.FindToolBar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            app:contentInsetStart="0dip"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/toolbar_left_button_arl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_common_selector">
+
+                    <ImageView
+                        android:id="@+id/toolbar_left_button"
+                        android:layout_width="46px"
+                        android:layout_height="46px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="20px"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/start_page_exit"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_left_button_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/toolbar_left_button"
+                        android:text="  "
+                        android:textColor="#333333"
+                        android:textSize="43px" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="注册申请"
+                    android:textColor="#333333"
+                    android:textSize="46px"
+                     />
+
+                <TextView
+                    android:id="@+id/toolbar_right_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_common_selector"
+                    android:gravity="center"
+                    android:paddingLeft="40px"
+                    android:paddingRight="40px"
+                    android:text="提交"
+                    android:textColor="#333333"
+                    android:textSize="43px"
+                     />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/toolbar_right_button_iv_arl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_common_selector">
+
+                    <ImageView
+                        android:id="@+id/toolbar_right_button_iv"
+                        android:layout_width="55px"
+                        android:layout_height="55px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/start_page_exit"
+                        android:visibility="gone"
+                         />
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.delta.smt.ui.find.FindToolBar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

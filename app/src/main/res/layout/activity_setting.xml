@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bac"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/px_40"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_person_files"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_140"
+            android:drawableRight="@drawable/ic_cha_more_into"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:text="个人资料"
+            android:textColor="#333333"
+            android:textSize="@dimen/px_40"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:background="@color/bac"
+        />
+        <TextView
+            android:id="@+id/tv_security"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_140"
+            android:drawableRight="@drawable/ic_cha_more_into"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:text="账号与安全"
+            android:textColor="#333333" android:textSize="@dimen/px_40"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/px_40"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_information"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_140"
+            android:drawableRight="@drawable/ic_cha_more_into"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:text="消息通知"
+            android:textColor="#333333" android:textSize="@dimen/px_40"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:background="@color/bac"
+        />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_clear_cacher"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_140"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_clear_cacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:text="清除缓冲"
+                android:textColor="#333333"
+                android:textSize="@dimen/px_40"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:drawablePadding="@dimen/px_20"
+                android:drawableRight="@drawable/ic_cha_more_into"
+                android:gravity="right|center_vertical"
+                android:text="图片、数据等"
+                android:textColor="#333333"
+                android:textSize="@dimen/px_40"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_40"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_advice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_140"
+                android:drawableRight="@drawable/ic_cha_more_into"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:text="意见反馈"
+                android:textColor="#333333"
+                android:textSize="@dimen/px_40"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:background="@color/bac"
+            />
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_140"
+                android:layout_below="@+id/tv_advice"
+                android:drawableRight="@drawable/ic_cha_more_into"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:text="关于"
+                android:textColor="#333333"
+                android:textSize="@dimen/px_40"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_140"
+            android:background="@drawable/btn_add_my_sale_list_selector"
+            android:text="退出登录"
+            android:textColor="@android:color/white" android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

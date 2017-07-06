@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tv_order_this_now"
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tv_order_this_now_selector"
+        android:gravity="center"
+        android:text="立即预订"
+        android:textColor="#FFFFFF"
+        android:textSize="40px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_order_this_now"
+        android:layout_marginBottom="30px"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_bar_start_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddee3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="30px"
+            android:background="#dddee3" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/arl_order_this_room_amount"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:background="@drawable/btn_buycar_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="预约包间数"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="30px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cha_more_into" />
+
+            <TextView
+                android:id="@+id/tv_order_this_room_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25px"
+                android:layout_toLeftOf="@id/iv1"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddee3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="30px"
+            android:background="#dddee3" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/arl_order_this_date"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:background="@drawable/btn_buycar_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="预约日期"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="30px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cha_more_into" />
+
+            <TextView
+                android:id="@+id/tv_order_this_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25px"
+                android:layout_toLeftOf="@id/iv2"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddee3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="30px"
+            android:background="#dddee3" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/arl_order_this_time"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:background="@drawable/btn_buycar_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="预约时段"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="30px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cha_more_into" />
+
+            <TextView
+                android:id="@+id/tv_order_this_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25px"
+                android:layout_toLeftOf="@id/iv3"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddee3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="30px"
+            android:background="#dddee3" />
+
+        <EditText
+            android:id="@+id/et_order_this_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="top"
+            android:hint="备注（可填写人数以及其他要求）"
+            android:minHeight="385px"
+            android:padding="45px"
+            android:textColor="#666666"
+            android:textColorHint="#999999"
+            android:textSize="34px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddee3" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

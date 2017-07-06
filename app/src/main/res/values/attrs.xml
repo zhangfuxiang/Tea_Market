@@ -1,0 +1,35 @@
+<resources>
+    <declare-styleable name="XImageView">
+        <!-- 初始化状态时, 如果图片小于 view 的尺寸，是否需要适应view的尺寸-->
+        <attr name="initType" format="enum">
+            <enum name="fitViewMin" value="1" />
+            <enum name="fitViewMax" value="2" />
+            <enum name="fitImage" value="4" />
+            <enum name="fitViewMinImageMin" value="8" />
+        </attr>
+
+        <attr name="doubleType" format="enum">
+            <enum name="fitViewMinViewMax" value="1" />
+            <enum name="fitImageMinViewMax" value="2" />
+            <enum name="fitViewMinImageMax" value="4" />
+            <enum name="fitImageMinImageMax" value="8" />
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="WheelView">
+        <attr name="unitHeight" format="dimension" />
+        <attr name="itemNumber" format="integer" />
+
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="selectedTextSize" format="dimension" />
+        <attr name="isCyclic" format="boolean" />
+
+        <attr name="lineColor" format="color" />
+        <attr name="lineHeight" format="dimension" />
+
+        <attr name="noEmpty" format="boolean" />
+        <attr name="isEnable" format="boolean" />
+    </declare-styleable>
+</resources>

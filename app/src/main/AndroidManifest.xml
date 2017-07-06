@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.delta.smt">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_tea_leaf"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- welcome activity -->
+
+        <activity
+            android:name=".ui.HomePage.c_search_goods.SearchGoodsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.appointment_drink_tea.AppointmentDrinkTeaActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.rush_to_purchase.RushToBuyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.rush_to_purchase.RushToBuyDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.tea_music.MusicActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- login activity -->
+        <activity
+            android:name=".ui.login.login.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".ui.login.loginc.LoginCActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".ui.Personal.AccountBinding.AccountBindingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.Balance.BalanceActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.login.reset_password_1.ResetPasswordOneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".ui.login.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <!-- main activity -->
+        <activity
+            android:name=".ui.Personal.PayMerchant.PayMerchantActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.Balance.withDraw.WithdrawActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartPageTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Personal.PersonAppointment.appointment_to_store.PersonAppointmentActivity"/>
+        <activity android:name=".ui.Personal.PersonalActivities.PersonActivitiesActivity"/>
+        <activity android:name=".ui.Personal.PersonalActivities.PersonActivitiesDetailActivity"/>
+        <activity android:name=".ui.Personal.PersonAppointment.AppointmentDetail.PersonAppointmentDetailActivity"/>
+        <!-- main activity -->
+        <activity
+            android:name=".ui.brands.BrandListActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.find.auctionHouse.AuctionHouseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.find.auctionHouseDetail.AuctionHouseDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.find.subjectActivity.SubjectActivityActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.find.priceRecord.PriceRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.find.myGivePrice.MyGivePriceActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.find.collectionInfo.UploadCollectionInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".ui.Personal.Balance.BalanceDetail.BalanceDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".ui.Personal.Balance.charge.ChargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".ui.find.subjectActivityDetail.SubjectActivityDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.find.productDetail.ProductDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.find.buyCar.BuyCarActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.buycar.confirmOrder.ConfirmOrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.buycar.myAddressList.MyAddressListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.buycar.addNewAddress.AddNewAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.buycar.updateUserAddress.UpdateUserAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.order_manager.OrderManagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.order_detail.OrderDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.modify_consignee.ModifyConsigneeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.modify_consignee.NewConsigneeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.modify_consignee.AddessPickerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.appointment_to_store.AppointmentStoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.refer_buy.ReferBuyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.purchase.PurchaseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.Saleable_good.SaleableGoodActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.pushable_activity.PushableActActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.pushable_message.PushableMessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.pushable_ads.PushableAdsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.new_circly.NewCycirclyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.acution_able.AuctionableActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.stockout.StockoutActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.more.MoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.login.reset_password_2.ResetPasswordTwoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".ui.find.collectionInfo.ShowImagePage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.drinktea.order_this.OrderThisActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.drinktea.order_other_list.OrderOtherListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.drinktea.write_order_info.WriteOrderInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.drinktea.choose_address.ChooseAddressActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity
+            android:name=".ui.drinktea.order_this_list.OrderThisListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.login.UserRulesActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.my_order.MyOrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.my_order.no_payment.order_detail.OrderDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.setting.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.setting.about.AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.setting.advice_response.AdviceResponseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.setting.information_notice.InformationNoticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.setting.person_information.PersonInformationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.setting.person_information.change_name.ChangeNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.setting.person_information.receive_address.ReceiveAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.setting.person_information.receive_address.edit_address.EditAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.setting.person_information.receive_address.add_address.AddAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.Personal.setting.account_security.AccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.group_purchase.GroupPurchaseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.HomePage.group_purchase.GroupPurchaseDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.HomePage.productDetail.ProductDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.find.systemShop.SystemShopActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.HomePage.more.sys_pub.SystemPublicActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.HomePage.NewsDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.HomePage.WebViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.find.confirmOrder.ConfirmOrderActivity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
+        <activity
+            android:name=".ui.Personal.setting.account_security.ChangePhoneActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.Personal.setting.account_security.ChangeNewPhoneActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.Personal.setting.account_security.resetChargePassword.ChangePasswordActivity"></activity>
+        <activity
+            android:name=".ui.Personal.setting.account_security.resetChargePassword.ResetChargePasswordActivity"
+            android:launchMode="standard"></activity>
+
+
+        <activity
+            android:name=".ui.HomePage.subjectActivity.SubjectActivityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HomePage.subjectActivityDetail.SubjectActivityDetailActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+    <provider
+        android:name="com.luck.util.MyFileProvider"
+        android:authorities="${applicationId}.provider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+    </provider>
+
+
+</manifest>

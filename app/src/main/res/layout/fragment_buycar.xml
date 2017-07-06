@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rv_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F2F2"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/bigRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="616">
+
+            <CheckBox
+                android:id="@+id/cb_all_check"
+                android:layout_width="62px"
+                android:layout_height="62px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:background="@drawable/cb_buy_car"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/tv_all_check_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/cb_all_check"
+                android:includeFontPadding="false"
+                android:text="全选"
+                android:textColor="#333333"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tv_no_freight_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_all_check_label"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40px"
+                android:includeFontPadding="false"
+                android:text="不含配送费"
+                android:textColor="#666666"
+                android:textSize="34px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:layout_toLeftOf="@id/tv_no_freight_label"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_total_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="合计："
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="¥0"
+                    android:textColor="#FF6000"
+                    android:textSize="40px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_settle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="134"
+            android:background="@drawable/btn_settle_selector"
+            android:gravity="center"
+            android:text="结算"
+            android:textColor="#FFFFFF"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

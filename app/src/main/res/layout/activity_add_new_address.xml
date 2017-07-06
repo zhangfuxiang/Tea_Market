@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_start_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="30px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="收货人"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/et_person_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="274px"
+                android:layout_marginRight="45px"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="#666666"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="45px"
+            android:background="#dddee3" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125px">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="手机号码"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="274px"
+                android:layout_marginRight="45px"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="#666666"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="45px"
+            android:background="#dddee3" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/arl_address_area"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:background="@drawable/btn_common_selector">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="所在地区"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <ImageView
+                android:id="@+id/iv_right_arrow"
+                android:layout_width="25px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cha_more_into" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:layout_toLeftOf="@id/iv_right_arrow"
+                android:maxLines="1"
+                android:text="请选择"
+                android:textColor="#666666"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="45px"
+            android:background="#dddee3" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="184px">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45px"
+                android:layout_marginTop="40px"
+                android:text="详细地址"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/et_detail_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="274px"
+                android:layout_marginRight="45px"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:maxLines="2"
+                android:paddingBottom="40px"
+                android:paddingTop="40px"
+                android:textColor="#666666"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddee3" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="30px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:background="#FFFFFF">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="40px"
+            android:text="设为默认地址"
+            android:textColor="#666666"
+            android:textSize="40px" />
+
+        <ToggleButton
+            android:id="@+id/tb_check_default_address"
+            android:layout_width="148px"
+            android:layout_height="90px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45px"
+            android:background="@drawable/tb_default_check_selector"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

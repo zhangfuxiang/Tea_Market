@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/todo_things_cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_220"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="4px"
+                android:layout_gravity="left"
+                android:id="@+id/todo_things_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:text="期待"
+                android:textSize="@dimen/txt_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@color/line"
+        android:layout_gravity="bottom"/>
+</com.zhy.autolayout.AutoFrameLayout>

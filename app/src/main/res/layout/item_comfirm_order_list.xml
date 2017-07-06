@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260px"
+    android:background="#FFFFFF">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_confirm_order_item_picture"
+        android:layout_width="154px"
+        android:layout_height="154px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="43px"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tv_confirm_order_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28px"
+        android:layout_marginRight="43px"
+        android:layout_marginTop="66px"
+        android:layout_toRightOf="@id/iv_confirm_order_item_picture"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="武夷岩茶 ZHP0860-125 2016春茶"
+        android:textColor="#666666"
+        android:textSize="37px" />
+
+    <TextView
+        android:id="@+id/tv_confirm_orde_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_confirm_order_item_name"
+        android:layout_below="@id/tv_confirm_order_item_name"
+        android:layout_marginTop="43px"
+        android:layout_toRightOf="@id/iv_buy_car_item_picture"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="¥438.00"
+        android:textColor="#FF6000"
+        android:textSize="37px" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="43px"
+        android:gravity="right"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="×1"
+        android:textColor="#FF6000"
+        android:textSize="37px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="43px"
+        android:background="#CCCCCC" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

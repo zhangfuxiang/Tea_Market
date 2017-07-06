@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_pay_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="支付方式"
+            android:textColor="@color/c_3B3B3B"
+            android:textSize="40px" />
+
+        <RadioGroup
+            android:id="@+id/rg_pay_way"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30px">
+
+            <RadioButton
+                android:id="@+id/rb_ali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/shape_line"
+                android:text="支付宝支付"
+                android:textColor="@color/c_3B3B3B"
+                android:textSize="40px" />
+
+            <RadioButton
+                android:id="@+id/rb_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="微信支付"
+                android:textColor="@color/c_3B3B3B"
+                android:textSize="40px" />
+        </RadioGroup>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_pay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_charge"
+                android:padding="30px"
+                android:text="5000元"
+                android:textColor="@color/c_6c9772"
+                android:textSize="40px" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="余额充值"
+                android:textColor="@color/c_6c9772"
+                android:textSize="40px" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:src="@drawable/ic_cha_delete" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="30px"
+            android:background="@color/grey" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付方式"
+                android:textColor="@color/c_3B3B3B"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tv_pay_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="30px"
+                android:drawableRight="@drawable/ic_cha_more_into"
+                android:gravity="right"
+                android:text="支付宝支付"
+                android:textColor="@color/c_3B3B3B"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="30px"
+            android:background="@color/grey" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:paddingBottom="10px"
+            android:paddingTop="10px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="需付款"
+                android:textColor="@color/c_3B3B3B"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tv_sell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="30px"
+                android:gravity="right"
+                android:text="￥ 438.00"
+
+                android:textColor="@color/c_F46526"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <Button
+            android:id="@+id/bt_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:background="@color/c_F46526"
+            android:text="确认付款"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</FrameLayout>

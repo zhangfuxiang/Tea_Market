@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.delta.commonlibs.widget.statusLayout.StatusLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.superrecycleview.superlibrary.recycleview.SuperRecyclerView
+            android:id="@+id/lv_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.delta.commonlibs.widget.statusLayout.StatusLayout>
+
+</LinearLayout>

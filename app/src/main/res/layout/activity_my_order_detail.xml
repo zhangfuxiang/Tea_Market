@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bac"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:background="@color/c_FBEAAF"
+                android:drawableLeft="@mipmap/car2"
+                android:drawablePadding="30px"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="订单已生成，等待付款"/>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="@dimen/px_120"
+                    android:layout_height="@dimen/px_120"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_adress"
+                    android:padding="@dimen/px_20"
+                    android:src="@mipmap/adress2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收货人：王先生"
+                    android:id="@+id/tv_receiver"
+                    android:layout_marginTop="@dimen/px_20"
+                    android:layout_toRightOf="@+id/iv_adress"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话：1303344564"
+                    android:id="@+id/tv_telephone"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_above="@+id/tv_address" android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收货地址：北京市朝阳区望京嘉美中心写字楼"
+                    android:layout_below="@+id/tv_receiver"
+                    android:id="@+id/tv_address"
+                    android:layout_marginBottom="@dimen/px_20"
+                    android:layout_marginTop="@dimen/px_20"
+                    android:layout_toRightOf="@+id/iv_adress"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_40"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:gravity="center_vertical"
+                    android:text="老开心茶楼"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:background="@color/line"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ry_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_40"/>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView android:id="@+id/tv1"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="@dimen/px_40"
+                              android:layout_marginTop="@dimen/px_20"
+                              android:text="商品总价："
+                    />
+
+                    <TextView android:id="@+id/tv_all_goods_price"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignBaseline="@+id/tv1"
+                              android:layout_alignBottom="@+id/tv1"
+                              android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+                              android:layout_marginRight="@dimen/px_40" android:text="￥1752.00"/>
+
+                    <TextView android:id="@+id/tv2"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_below="@+id/tv1"
+                              android:layout_marginBottom="@dimen/px_20"
+                              android:layout_marginLeft="@dimen/px_40"
+                              android:layout_marginTop="@dimen/px_20"
+                              android:text="配送费："
+                    />
+
+                    <TextView android:id="@+id/tv_send_price"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignBaseline="@+id/tv2"
+                              android:layout_alignBottom="@+id/tv2"
+                              android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+                              android:layout_marginRight="@dimen/px_40" android:text="+￥00.00"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:background="@color/line"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView android:id="@+id/tv3"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="@dimen/px_20"
+                              android:padding="@dimen/px_20"
+                              android:text="合计："
+                    />
+
+                    <TextView android:id="@+id/tv_count_price"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignBaseline="@+id/tv3"
+                              android:layout_alignBottom="@+id/tv3"
+                              android:layout_alignParentEnd="true"
+                              android:layout_alignParentRight="true"
+                              android:layout_marginRight="@dimen/px_40" android:text="￥1752.00"
+                              android:textColor="@color/red" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="@dimen/px_40"
+                android:id="@+id/ll_pay"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/tv4"
+                          android:layout_marginLeft="@dimen/px_20"
+                          android:padding="@dimen/px_20"
+                          android:text="支付方式"
+                />
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/tv_pay_way"
+                          android:text="余额支付"
+                          android:layout_marginRight="@dimen/px_40"
+                          android:layout_alignBaseline="@+id/tv4"
+                          android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_40"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="30px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_order_num"
+                    android:text="订单号: 1111111111111"
+                    android:textColor="@color/c_666666"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_down_time"
+                    android:text="下单时间: 2016-11-11"
+                    android:layout_marginTop="20px"
+                    android:textColor="@color/c_666666"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_pay_time"
+                    android:layout_marginTop="20px"
+                    android:text="付款时间: 2016-11-11"
+                    android:textColor="@color/c_666666"
+                    android:layout_height="wrap_content"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_40"
+                android:background="@color/white"
+                android:padding="@dimen/px_40">
+
+                <TextView
+                    android:id="@+id/tv_left_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/btn_auction_selector"
+                    android:padding="@dimen/px_20"
+                    android:text="取消订单"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/tv_right_button"
+                    android:layout_toStartOf="@+id/tv_right_button"
+                    android:layout_marginEnd="11dp"/>
+
+                <TextView
+                    android:id="@+id/tv_right_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_auction_selector"
+                    android:padding="@dimen/px_20"
+                    android:text="付款"
+                    android:textColor="@color/greed"/>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

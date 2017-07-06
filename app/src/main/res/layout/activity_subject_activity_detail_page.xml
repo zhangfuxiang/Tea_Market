@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_start_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="126px"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dddee3" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_cancel_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_common_selector"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="取消报名"
+                    android:textColor="@color/base_color"
+                    android:textSize="40px" />
+                <TextView
+                    android:id="@+id/tv_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_add_suject_selector"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="报名参加"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_layout"
+            android:scrollbars="none">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="1080px"
+                    android:background="#FFFFFF" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#dddee3" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="195px"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:id="@+id/tv_show_subject_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="50px"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/tv_show_suject_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_show_subject_name"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="43px"
+                        android:includeFontPadding="false"
+                        android:text=""
+                        android:textColor="#FF6000"
+                        android:textSize="34px" />
+
+                    <TextView
+                        android:id="@+id/tv_showNowPriceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_show_subject_name"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="40px"
+                        android:includeFontPadding="false"
+                        android:text="报名费："
+                        android:textColor="#999999"
+                        android:textSize="34px" />
+
+                    <TextView
+                        android:id="@+id/tv_showNowPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_showNowPriceLabel"
+                        android:layout_toRightOf="@id/tv_showNowPriceLabel"
+                        android:includeFontPadding="false"
+                        android:text=""
+                        android:textColor="#FF6000"
+                        android:textSize="40px" />
+
+
+                    <TextView
+                        android:id="@+id/tv_showShowPersonAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_showNowPriceLabel"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="45px"
+                        android:includeFontPadding="false"
+                        android:text="已报名/限定人数："
+                        android:textColor="#999999"
+                        android:textSize="34px" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#dddee3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="30px"
+                    android:background="#dddee3" />
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="195px"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45px">
+
+                        <TextView
+                            android:id="@+id/tv_subject_period_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45px"
+                            android:text="活动时间："
+                            android:textColor="#999999"
+                            android:textSize="40px" />
+
+                        <TextView
+                            android:id="@+id/tv_subject_period"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/tv_subject_period_label"
+                            android:layout_marginRight="45px"
+                            android:layout_toRightOf="@id/tv_subject_period_label"
+                            android:text=""
+                            android:textColor="#333333"
+                            android:textSize="40px" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="45px">
+
+                        <TextView
+                            android:id="@+id/tv_subject_place_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45px"
+                            android:text="活动地点："
+                            android:textColor="#999999"
+                            android:textSize="40px" />
+
+                        <TextView
+                            android:id="@+id/tv_subject_place"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/tv_subject_place_label"
+                            android:layout_marginRight="45px"
+                            android:layout_toRightOf="@id/tv_subject_place_label"
+                            android:text=""
+                            android:textColor="#333333"
+                            android:textSize="40px" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#dddee3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="30px"
+                    android:background="#dddee3" />
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:id="@+id/tv_subject_content_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="128px"
+                        android:layout_marginLeft="45px"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="活动内容"
+                        android:textColor="#666666"
+                        android:textSize="40px" />
+
+                    <View
+                        android:id="@+id/view_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@id/tv_subject_content_label"
+                        android:layout_marginLeft="45px"
+                        android:background="#dddee3" />
+
+                    <!--<TextView
+                        android:id="@+id/tv_subject_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_line1"
+                        android:layout_marginRight="45px"
+                        android:layout_marginTop="34px"
+                        android:paddingBottom="30px"
+                        android:text=""
+                        android:textColor="#999999"
+                        android:textSize="34px" />-->
+                    <WebView
+                        android:id="@+id/wv_subject_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_line1" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="34px"
+                    android:background="#dddee3" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </ScrollView>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

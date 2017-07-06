@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical"
+    app:cardElevation="5dp">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:id="@+id/near_act_im"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_tea_cake" />
+
+        <TextView
+            android:id="@+id/near_title_gust_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="今晚一起去！别忘了哦！"
+            android:textSize="@dimen/txt_size" />
+
+        <TextView
+            android:id="@+id/near_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:text="￥438.00"
+            android:textColor="#FE0D05"
+            android:textSize="@dimen/txt_size" />
+
+        <TextView
+            android:id="@+id/near_seal_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="-35dp"
+            android:padding="5dp"
+            android:text="销量 18"
+            android:textSize="@dimen/txt_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/line" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</android.support.v7.widget.CardView>

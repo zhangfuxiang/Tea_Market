@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        android:background="@color/bac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_page_webview"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

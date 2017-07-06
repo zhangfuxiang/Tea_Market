@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_pay_method_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43px"
+        android:includeFontPadding="false"
+        android:text="支付方式"
+        android:textColor="#333333"
+        android:textSize="40px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_balance_pay"
+            android:layout_width="match_parent"
+            android:layout_height="150px">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#CCCCCC" />
+
+            <CheckBox
+                android:id="@+id/cb_check_balance_pay"
+                android:layout_width="62px"
+                android:layout_height="62px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:background="@drawable/cb_pay_method"
+                android:button="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/cb_check_balance_pay"
+                android:includeFontPadding="false"
+                android:text="余额支付"
+                android:textColor="#333333"
+                android:textSize="40px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_alipay_pay"
+            android:layout_width="match_parent"
+            android:layout_height="150px">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#CCCCCC" />
+
+            <CheckBox
+                android:id="@+id/cb_check_alipay_pay"
+                android:layout_width="62px"
+                android:layout_height="62px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:background="@drawable/cb_pay_method"
+                android:button="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/cb_check_alipay_pay"
+                android:includeFontPadding="false"
+                android:text="支付宝支付"
+                android:textColor="#333333"
+                android:textSize="40px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_wechat_pay"
+            android:layout_width="match_parent"
+            android:layout_height="150px">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#CCCCCC" />
+
+            <CheckBox
+                android:id="@+id/cb_check_wechat_pay"
+                android:layout_width="62px"
+                android:layout_height="62px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:background="@drawable/cb_pay_method"
+                android:button="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/cb_check_wechat_pay"
+                android:includeFontPadding="false"
+                android:text="微信支付"
+                android:textColor="#333333"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

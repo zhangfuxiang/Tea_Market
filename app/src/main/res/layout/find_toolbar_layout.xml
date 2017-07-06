@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/toolbar_left_button_arl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_common_selector">
+
+        <ImageView
+            android:id="@+id/toolbar_left_button"
+            android:layout_width="46px"
+            android:layout_height="46px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:scaleType="centerInside"
+            android:src="@mipmap/start_page_exit"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_left_button_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@id/toolbar_left_button"
+            android:text="返回"
+            android:textColor="#333333"
+            android:textSize="43px"
+            android:visibility="gone" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/toolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="注册申请"
+        android:textColor="#333333"
+        android:textSize="46px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/toolbar_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_common_selector"
+        android:gravity="center"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:text="提交"
+        android:textColor="#333333"
+        android:textSize="43px"
+        android:visibility="gone" />
+</com.zhy.autolayout.AutoRelativeLayout>

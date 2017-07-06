@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bac"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/bac"
+            android:id="@+id/ry_address"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <Button
+            android:id="@+id/btn_add_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_140"
+            android:background="@drawable/btn_add_my_sale_list_selector"
+            android:text="添加新地址"
+            android:textColor="@android:color/white" android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
+

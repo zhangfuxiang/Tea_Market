@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@color/back"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="我的收货地址"
+            android:textSize="@dimen/common_size"
+
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:background="@color/back">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/modify_consignee_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:background="@color/line"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <TextView
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:id="@+id/new_consignee_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/txt_action_selector_green_bac"
+            android:gravity="center"
+            android:text="新建收货人信息"
+            android:textSize="@dimen/big_size" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

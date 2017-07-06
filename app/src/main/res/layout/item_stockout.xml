@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px_50"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--1-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/px_20"
+        android:background="@color/line" />
+    <!--200-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_240"
+            android:layout_marginLeft="@dimen/px_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/order_iv"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:layout_marginLeft="@dimen/px_20"
+                android:src="@drawable/ic_cha_auction_bank"
+                app:civ_border_color="#00FFFFFF"
+                app:civ_border_width="1px"
+                app:civ_fill_color="#FFFFFF" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_60"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:gravity="center"
+                    android:text="武夷岩茶 ZHP0860-125 2016春茶"
+                    android:textSize="@dimen/txt_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_40"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:gravity="bottom"
+                    android:text="类别 绿茶"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/px_25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_40"
+                    android:layout_marginLeft="@dimen/px_110"
+                    android:layout_marginTop="-40px"
+                    android:gravity="bottom"
+                    android:text="产地：福建"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/px_25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_40"
+                    android:layout_marginLeft="@dimen/px_240"
+                    android:layout_marginTop="-40px"
+                    android:gravity="bottom"
+                    android:text="规格：500g"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/px_25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:layout_marginRight="20px"
+                    android:gravity="center"
+                    android:text="来源：老开心茶楼"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/px_25" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_40"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:layout_marginRight="20px"
+                        android:gravity="top"
+                        android:text="系统价格：￥100.00"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/px_25" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/px_330"
+                        android:layout_marginRight="20px"
+                        android:gravity="top"
+                        android:text="售价："
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/px_25" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:layout_marginRight="20px"
+                        android:gravity="top"
+                        android:text="￥438.00"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/px_25" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <!--1-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/px_20"
+        android:background="@color/line" />
+    <!--100-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_110"
+            android:layout_marginLeft="@dimen/px_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:textSize="@dimen/txt_size"
+                    android:textColor="@color/red"
+                    android:text="库存：5"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_50"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/px_200"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:background="@drawable/btn_auction_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="手动录入"
+                    android:textSize="@dimen/txt_size"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="@dimen/px_200"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:background="@drawable/btn_auction_selector"
+                    android:gravity="center"
+                    android:text="快速补货"
+                    android:textColor="@color/greed"
+                    android:textSize="@dimen/txt_size" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/px_20"
+        android:background="@color/line" />
+
+</com.zhy.autolayout.AutoLinearLayout>

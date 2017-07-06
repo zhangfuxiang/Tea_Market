@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_start_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:includeFontPadding="false"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="用户服务协议暂时为空"
+            android:textColor="#CCCCCC"
+            android:textSize="34px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>
+

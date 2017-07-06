@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f4"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/ll_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/personal_headportrait"
+                        android:layout_width="158px"
+                        android:layout_height="158px"
+                        android:layout_marginLeft="@dimen/px_20"
+                        android:layout_marginTop="20px"
+                        android:src="@mipmap/person" />
+
+                    <TextView
+                        android:id="@+id/personal_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:layout_toRightOf="@+id/personal_headportrait"
+                        android:textSize="@dimen/px_40"
+                        tools:text="王三" />
+
+                    <TextView
+                        android:id="@+id/personal_phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/personal_headportrait"
+                        android:layout_marginLeft="@dimen/px_30"
+                        android:layout_marginTop="45px"
+
+                        android:layout_toRightOf="@id/personal_headportrait"
+                        android:textSize="@dimen/px_40"
+                        tools:text="1233444555" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="50px"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/personals_payment"
+                        android:layout_width="@dimen/px_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:drawablePadding="30px"
+                        android:drawableTop="@drawable/ic_cha_payment"
+                        android:gravity="center"
+                        android:text="付款"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/px_40" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_merchant"
+                        android:layout_width="@dimen/px_0"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30px"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:textColor="#666666"
+                            android:textSize="@dimen/px_40"
+                            tools:text="￥10000" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30px"
+                            android:gravity="center_horizontal"
+                            android:text="余额"
+                            android:textColor="#666666"
+                            android:textSize="@dimen/px_40" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/personals_account_pay"-->
+                    <!--android:layout_width="@dimen/px_0"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:drawablePadding="30px"-->
+                    <!--android:drawableTop="@drawable/ic_cha_account_pay"-->
+                    <!--android:gravity="center"-->
+                    <!--android:paddingTop="30px"-->
+                    <!--android:text="支付账户"-->
+                    <!--android:textColor="#666666"-->
+                    <!--android:textSize="@dimen/px_40" />-->
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@color/white">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/personals_shopmanage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="128px"
+                        android:layout_marginTop="@dimen/px_20"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/px_20"
+                        android:text="我的订单"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/px_40" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="128px"
+                        android:layout_marginTop="@dimen/px_20"
+                        android:drawablePadding="50px"
+                        android:drawableRight="@drawable/ic_cha_more_into"
+                        android:gravity="right|center_vertical"
+                        android:text="查看全部订单"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/px_40" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/grey" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/personal_unpay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30px"
+                        android:layout_marginTop="@dimen/px_20"
+                        android:layout_weight="1"
+                        android:drawablePadding="20px"
+                        android:drawableTop="@drawable/btn_unpay_selector"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/px_20"
+                        android:text="待支付"
+                        android:textColor="@drawable/selector_text_press_color"
+                        android:textSize="@dimen/px_40" />
+
+                    <TextView
+                        android:id="@+id/personal_un_send"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30px"
+                        android:layout_marginTop="@dimen/px_20"
+                        android:layout_weight="1"
+                        android:drawablePadding="20px"
+                        android:drawableTop="@drawable/btn_send_selector"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/px_20"
+                        android:text="待发货"
+                        android:textColor="@drawable/selector_text_press_color"
+                        android:textSize="@dimen/px_40" />
+
+                    <TextView
+                        android:id="@+id/personal_unReceived"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30px"
+                        android:layout_marginTop="@dimen/px_20"
+                        android:layout_weight="1"
+                        android:drawablePadding="20px"
+                        android:drawableTop="@drawable/btn_recieve_selector"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/px_20"
+                        android:text="待收货"
+                        android:textColor="@drawable/selector_text_press_color"
+                        android:textSize="@dimen/px_40" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+
+            android:id="@+id/person_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="50px"
+                android:drawableRight="@drawable/ic_cha_more_into"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:text="我的预约"
+                android:textColor="#333333"
+                android:textSize="@dimen/px_40" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/personals_participationactivity"
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="50px"
+                android:drawableRight="@drawable/ic_cha_more_into"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:text="我参加的活动"
+                android:textColor="#333333"
+                android:textSize="@dimen/px_40" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+
+            android:id="@+id/My_Points"
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:text="我的积分"
+                android:textColor="#333333"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:drawablePadding="50px"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:text="攒积分有惊喜"
+                android:textColor="#555555"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30px"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:textColor="#333333"
+                android:textSize="@dimen/px_40"
+                tools:text="0" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:background="#f2f2f4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:text="每消费1元，可获得一个积分，用于获得礼品或抵扣商品费用。"
+                android:textColor="#333444"
+                android:textSize="35px" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/personal_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:drawablePadding="50px"
+                android:drawableRight="@drawable/ic_cha_more_into"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px_20"
+                android:text="设置"
+                android:textColor="#333333"
+                android:textSize="@dimen/px_40" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</FrameLayout>

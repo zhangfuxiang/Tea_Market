@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_F2F2F4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="30px">
+
+                <TextView
+                    android:id="@+id/tv_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="支付宝账号"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/px_40" />
+
+
+                <EditText
+                    android:id="@+id/et_alipay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:hint="请填写支付宝账号"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="@dimen/px_40" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="30px">
+
+                <TextView
+                    android:id="@+id/tv_alipay_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="支付宝姓名"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/px_40" />
+
+                <EditText
+                    android:id="@+id/et_alipay_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:hint="请填写支付宝姓名"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="@dimen/px_40" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提现金额"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_30"
+                    android:background="@null"
+                    android:hint="请输入提现金额"
+                    android:drawableLeft="@drawable/ic_rmb"
+                    android:drawablePadding="30px"
+                    android:inputType="number"
+                    android:textSize="40px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/px_30"
+                    android:background="@color/grey" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_blance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_30"
+                        android:text="账户余额："
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/tv_all_withdraw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100px"
+                        android:layout_marginTop="@dimen/px_30"
+                        android:text="全部提现"
+                        android:textColor="@color/base_color"
+                        android:textSize="40px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <Button
+                android:id="@+id/bt_pay"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_margin="30px"
+                android:layout_marginTop="50px"
+                android:background="@color/c_D7D7D7"
+                android:text="提现"
+                android:textColor="@color/white" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </ScrollView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

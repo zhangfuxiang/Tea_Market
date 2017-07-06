@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bac"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_50"
+        android:background="@drawable/text_time"
+        android:paddingBottom="@dimen/px_5"
+        android:paddingLeft="@dimen/px_15"
+        android:paddingRight="@dimen/px_15"
+        android:paddingTop="@dimen/px_5"
+        android:text="2017-01-25"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/px_40"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/lift_marg"
+        android:text="近期服务器不稳定，已经解决，请放心使用。"
+        android:textColor="@color/txt_color999"
+        android:textSize="@dimen/big_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="883px"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="295px">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_dialog_subject_picture"
+            android:layout_width="238px"
+            android:layout_height="238px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_close_dialog"
+            android:layout_width="94px"
+            android:layout_height="94px"
+            android:layout_alignParentRight="true"
+            android:padding="18px"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_cha_delete" />
+
+        <TextView
+            android:id="@+id/tv_dialog_subject_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="55px"
+            android:layout_toRightOf="@id/iv_dialog_subject_picture"
+            android:includeFontPadding="false"
+            android:text="报名参加主题活动"
+            android:textColor="#333333"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_dialog_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_dialog_subject_title"
+            android:layout_below="@id/tv_dialog_subject_title"
+            android:layout_marginTop="32px"
+            android:includeFontPadding="false"
+            android:text="武夷岩茶 春季采茶节 活动"
+            android:textColor="#666666"
+            android:textSize="34px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="40px"
+        android:background="#CCCCCC" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/arl_dialog_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:background="@drawable/btn_common_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:includeFontPadding="false"
+            android:text="支付方式"
+            android:textColor="#999999"
+            android:textSize="40px" />
+
+        <ImageView
+            android:id="@+id/iv_more_into"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="40px"
+            android:paddingTop="40px"
+            android:src="@drawable/ic_cha_more_into" />
+
+        <TextView
+            android:id="@+id/tv_dialog_payment_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_more_into"
+            android:includeFontPadding="false"
+            android:text="余额支付"
+            android:textColor="#666666"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="40px"
+        android:background="#CCCCCC" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:includeFontPadding="false"
+            android:text="需付款"
+            android:textColor="#999999"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_dialog_payment_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="43px"
+            android:includeFontPadding="false"
+            android:text="¥20.00"
+            android:textColor="#FF6000"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="40px"
+        android:background="#CCCCCC" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btn_dialog_sure_pay"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_join_suject_selector"
+            android:gravity="center"
+            android:text="确认付款"
+            android:textColor="#FFFFFF"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

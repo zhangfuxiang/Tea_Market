@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--1-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/px_20"
+        android:background="@color/line" />
+    <!--200-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_240"
+            android:layout_marginLeft="@dimen/px_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/push_able_act_image"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:layout_marginLeft="@dimen/px_20"
+                android:src="@drawable/ic_cha_auction_bank"
+                app:civ_border_color="#00FFFFFF"
+                app:civ_border_width="1px"
+                app:civ_fill_color="#FFFFFF" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/txt_color_999"
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_60"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:gravity="center"
+                    android:text="王先生"
+                    android:textSize="@dimen/txt_size" />
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_60"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:gravity="bottom"
+                    android:text="品茶的艺术"
+                    android:textColor="@color/txt_color_333"
+                    android:textSize="@dimen/big_size" />
+
+                <TextView
+                    android:id="@+id/content_tv"
+                    android:maxLines="1"
+                    android:textColor="@color/txt_color_999"
+                    android:layout_width="800px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:gravity="center"
+                    android:text="谢谢谢谢你喀喀喀灿灿偶啊嗖嗖嗖噢噢噢可i按此iiubiu"
+                    android:textSize="@dimen/txt_size" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_F2F2F4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/iv_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:src="@drawable/ic_take_photo"
+                    android:text="账户余额（元）"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="50px"
+                    android:layout_marginTop="30px"
+                    android:drawableLeft="@drawable/ic_rmb"
+
+                    android:textSize="50px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="30px">
+
+                <TextView
+                    android:id="@+id/tv_recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_cha_more_into"
+                    android:text="充值"
+                    android:textSize="40px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/px_30"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:id="@+id/tv_withdraw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_30"
+                    android:drawableRight="@drawable/ic_cha_more_into"
+                    android:text="提现"
+                    android:textSize="40px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </ScrollView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

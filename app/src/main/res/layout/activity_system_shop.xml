@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_sort"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_sort_icon"
+                    android:layout_width="43px"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cha_sort" />
+
+                <TextView
+                    android:id="@+id/tv_sort_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43px"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="25px"
+                    android:text="默认排序"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:id="@+id/iv_dropdown_icon"
+                    android:layout_width="43px"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_dropdown" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/btn_classify"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="43px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_classify_icon"
+                    android:layout_width="43px"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cha_filtrate" />
+
+                <TextView
+                    android:id="@+id/tv_classify_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43px"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="25px"
+                    android:text="分类筛选"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvCommodityList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_shoppingcart"
+            android:layout_width="155px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="200px"
+            android:layout_marginRight="45px"
+            android:background="@drawable/btn_shoppingcart_selector"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_cha_shoppingcart_white"
+            app:backgroundTint="#FF6000"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            app:useCompatPadding="false" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

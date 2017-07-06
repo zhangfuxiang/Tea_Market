@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/px_20"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_40"
+        android:text="余额充值"/>
+    <include
+        layout="@layout/include_recyclerview"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

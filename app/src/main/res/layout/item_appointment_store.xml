@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/px_50"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/px_20"
+        android:background="@color/line" />
+    <!--100-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_110"
+        android:layout_marginLeft="@dimen/px_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/appointment_order_numb_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="预约单号39322123"
+            android:textSize="@dimen/txt_size" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_pay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="20px"
+                android:text="客人已预约"
+                android:textColor="@color/greed"
+                android:textSize="@dimen/txt_size">
+
+            </TextView>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <!--1-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/px_20"
+        android:background="@color/line" />
+    <!--200-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:layout_marginLeft="@dimen/px_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/order_iv"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_marginLeft="@dimen/px_20"
+            android:src="@drawable/ic_cha_auction_bank"
+            app:civ_border_color="#00FFFFFF"
+            app:civ_border_width="1px"
+            app:civ_fill_color="#FFFFFF" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_60"
+                android:layout_marginLeft="@dimen/px_10"
+                android:gravity="center"
+                android:text="王先生 13810311440"
+                android:textSize="@dimen/txt_size" />
+
+            <TextView
+                android:layout_marginTop="-60px"
+                android:textColor="@color/red"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_60"
+                android:layout_marginRight="@dimen/px_20"
+                android:gravity="center"
+                android:text="本店会员"
+                android:textSize="@dimen/txt_size" />
+
+            <TextView
+                android:id="@+id/appointment_room_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_40"
+                android:layout_marginLeft="@dimen/px_10"
+                android:gravity="bottom"
+                android:text="包间数：1间"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/px_25" />
+
+            <TextView
+                android:id="@+id/appointment_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_40"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginRight="20px"
+                android:gravity="center"
+                android:text="时段：11月30日 13:30-17:30"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/px_25" />
+
+            <TextView
+                android:id="@+id/appointment_remark_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_40"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginRight="20px"
+                android:gravity="top"
+                android:text="备注：6个人，要带麻将桌的包间"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/px_25" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <!--1-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/px_20"
+        android:background="@color/line" />
+    <!--100-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_110"
+        android:layout_marginLeft="@dimen/px_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_50"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/txt_size"
+                android:layout_width="200px"
+                android:layout_height="80px"
+                android:layout_marginLeft="@dimen/px_20"
+                android:background="@drawable/btn_auction_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="联系客人" />
+
+            <TextView
+                android:id="@+id/appoint_status_tv"
+                android:textSize="@dimen/txt_size"
+                android:layout_width="240px"
+                android:layout_height="80px"
+                android:layout_marginLeft="@dimen/px_20"
+                android:background="@drawable/btn_auction_selector"
+                android:gravity="center"
+                android:text="客人已到店"
+                android:textColor="@color/greed" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/px_20"
+        android:background="@color/line" />
+
+</com.zhy.autolayout.AutoLinearLayout>

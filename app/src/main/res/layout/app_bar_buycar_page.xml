@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.delta.smt.ui.buycar.BuyCarToolBar
+            android:id="@+id/buycar_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            app:contentInsetStart="0dip"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/toolbar_left_button_arl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_common_selector">
+
+                    <ImageView
+                        android:id="@+id/toolbar_left_button"
+                        android:layout_width="46px"
+                        android:layout_height="46px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/start_page_exit"
+                        android:visibility="gone" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="购物车"
+                    android:textColor="#333333"
+                    android:textSize="50px" />
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/toolbar_right_button_iv_arl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_common_selector"
+                    android:visibility="gone">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="146px"
+                        android:layout_height="100px"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/toolbar_right_button_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="50px"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/ic_buycar_info" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="消息"
+                            android:textColor="#333333"
+                            android:textSize="34px" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.delta.smt.ui.buycar.BuyCarToolBar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

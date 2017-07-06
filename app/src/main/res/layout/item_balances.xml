@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginLeft="@dimen/px_20"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_60"
+            android:text="状态"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_60"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_60"
+            android:text="时间"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginLeft="@dimen/px_20"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_60"
+            android:text="余额"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_60"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_60"
+            android:text="金额 "/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="StartPageTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <!--<item name="android:windowBackground">@mipmap/bg_start_page</item>-->
+    </style>
+
+    <style name="cha_me_item_text_style">
+        <item name="android:textSize">@dimen/px_50</item>
+        <item name="android:paddingLeft">@dimen/px_20</item>
+        <item name="android:drawableRight">@drawable/ic_cha_more_into</item>
+        <item name="android:padding">@dimen/px_40</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/anim_enter_bottom</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/anim_exit_bottom</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <dimen name="px_50">50px</dimen>
+</resources>

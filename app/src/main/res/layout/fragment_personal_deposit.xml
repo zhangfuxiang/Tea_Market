@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <com.zhy.autolayout.AutoLinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+      <TextView
+          android:layout_width="@dimen/px_0"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="@dimen/px_40"
+
+          android:text="到账支付帐号"
+          />
+
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="@dimen/px_0"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:drawableRight="@drawable/ic_cha_more_into"
+          android:text="支付宝帐号\n(wei xxxxxxxx)" />
+
+  </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_60"
+            android:text="提现金额"
+            android:textSize="@dimen/px_40" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px_20"
+            android:paddingBottom="@dimen/px_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_60"
+                android:text="￥"
+                android:textSize="@dimen/px_40" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_5"
+            android:layout_marginLeft="@dimen/px_60"
+            android:background="@color/grey" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px_20"
+            android:paddingBottom="@dimen/px_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_60"
+                android:text="账户余额:"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_20"
+                android:text="10000"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_5"
+                android:text="全部提现"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/px_40" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_60"
+        android:text="提现"
+        android:textColor="@color/white"
+        android:background="@color/grey"
+        />
+</com.zhy.autolayout.AutoLinearLayout>

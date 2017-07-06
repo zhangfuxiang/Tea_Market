@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="#F2F2F4"
+                                     android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_man"
+        android:layout_height="170px"
+        android:background="@drawable/btn_buycar_selector"
+        android:gravity="center"
+        android:text="男"
+        android:textColor="#333333"
+        android:textSize="40px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bac"/>
+
+    <TextView
+        android:id="@+id/tv_woman"
+        android:layout_width="match_parent"
+        android:layout_height="170px"
+        android:background="@drawable/btn_buycar_selector"
+        android:gravity="center"
+        android:text="女"
+        android:textColor="#333333"
+        android:textSize="@dimen/px_40"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="30px"
+        android:background="#dddee3" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_buycar_selector"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#333333"
+        android:textSize="40px" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

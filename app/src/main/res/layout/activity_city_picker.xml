@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="请选择省市区"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dip"
+        android:orientation="horizontal" >
+
+        <com.delta.commonlibs.widget.addess_picker.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.delta.commonlibs.widget.addess_picker.WheelView>
+
+        <com.delta.commonlibs.widget.addess_picker.WheelView
+            android:id="@+id/id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.delta.commonlibs.widget.addess_picker.WheelView>
+
+        <com.delta.commonlibs.widget.addess_picker.WheelView
+            android:id="@+id/id_district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.delta.commonlibs.widget.addess_picker.WheelView>
+    </LinearLayout>
+
+    <TextView
+        android:textSize="20sp"
+        android:clickable="true"
+        android:id="@+id/confirm_tv"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center"
+        android:text="确定"
+        android:background="@drawable/txt_action_selector"
+        android:textColor="@color/greed" />
+</LinearLayout>

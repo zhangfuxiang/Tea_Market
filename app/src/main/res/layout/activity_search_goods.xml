@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px_120"
+                    android:layout_marginLeft="@dimen/px_50"
+                    android:gravity="center_vertical"
+                    android:text="搜索历史"
+                    android:textColor="@color/txt_color_999"
+                    android:textSize="@dimen/big_size" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/search_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <TextView
+                android:id="@+id/search_clean_tv"
+                android:layout_width="@dimen/px_300"
+                android:layout_height="@dimen/px_100"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_50"
+                android:background="@drawable/btn_auction_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="清除搜索历史"
+                android:textColor="@color/greed"
+                android:textSize="@dimen/txt_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="账户余额（元）"
+                android:textSize="@dimen/px_40"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px_60"
+            android:paddingTop="@dimen/px_60"
+            android:text="￥%d"
+            android:textSize="@dimen/px_60"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_40"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/cha_me_item_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="充值" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_5"
+            android:background="@color/grey"
+            />
+        <TextView
+            style="@style/cha_me_item_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提现"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_40"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="@dimen/px_40"
+            android:text="当前冻结金额"
+            android:textSize="@dimen/px_60" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="@dimen/px_40"
+            android:text="￥%d"
+            android:textSize="@dimen/px_60" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px_10"
+        android:text="冻结金额是指交易未完成前，由茶九九系统暂时保存的交易金额待交易完成后，由系统直接发放到余额中。 "
+        android:textSize="@dimen/px_30" />
+
+</com.zhy.autolayout.AutoLinearLayout>

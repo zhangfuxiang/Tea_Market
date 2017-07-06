@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginRight="1dp"
+    android:orientation="vertical"
+    app:cardElevation="5dp">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/near_act_im"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_tea_cake" />
+
+        <TextView
+            android:id="@+id/near_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="今晚一起去！别忘了哦！"
+            android:textSize="@dimen/txt_size"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/near_act_uer_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-5dp"
+                android:src="@mipmap/user_black2" />
+
+            <TextView
+                android:id="@+id/near_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="30/40"
+                android:textSize="@dimen/txt_size" />
+
+            <TextView
+                android:id="@+id/near_report_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:text="报名中"
+                android:textColor="#FE0D05"
+                android:textSize="@dimen/txt_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/line" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</android.support.v7.widget.CardView>

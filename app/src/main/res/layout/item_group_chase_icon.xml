@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="5px"
+    android:layout_marginTop="5px"
+    android:layout_width="120px"
+    android:layout_height="120px"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/group_purchase_icon_ri"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/search2" />
+</LinearLayout>

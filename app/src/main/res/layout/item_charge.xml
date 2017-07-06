@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:layout_margin="10px"
+                                       android:background="@drawable/shape_charge"
+                                       android:orientation="vertical"
+    >
+
+    <TextView
+        android:paddingTop="20px"
+        android:id="@+id/tv_raw_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="50元"
+        android:textColor="@color/c_6c9772"
+        android:textSize="35px"/>
+
+    <TextView
+        android:paddingBottom="20px"
+        android:id="@+id/tv_sell_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_raw_money"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:text="售价：￥49.50"
+        android:textColor="@color/c_6c9772"
+        android:textSize="30px"/>
+
+    <ImageView
+        android:id="@+id/iv_worth"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_worth"/>
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="186px"
+    android:layout_height="186px"
+    android:layout_margin="15px">
+
+    <ImageView
+        android:id="@+id/iv_add_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_cha_location" />
+</com.zhy.autolayout.AutoRelativeLayout>

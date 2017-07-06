@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@color/c_F2F2F4"
+                                     android:fitsSystemWindows="true"
+                                     android:orientation="vertical">
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="@mipmap/backage_zhi"
+        android:padding="20px">
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝账户"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_ali_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="还没绑定支付宝账户，请点击"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/bt_ali_change"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_account_button"
+            android:text="变更帐号"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/bt_ali_unbind"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@id/bt_ali_change"
+            android:background="@drawable/shape_account_button"
+            android:text="解除绑定"
+            android:textColor="@color/white"/>
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/bt_ali_change"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15px"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_ali_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bt_ali_change"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30px"
+            android:text="（维 180****5555）"
+            android:textColor="@color/white"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_marginTop="30px"
+        android:background="@mipmap/backage_weixin"
+        android:padding="20px">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信账户"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_weixin_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="还没绑定微信账户，请点击"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/bt_weixin_change"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_account_button"
+            android:text="变更帐号"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/bt_unbind"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@id/bt_weixin_change"
+            android:background="@drawable/shape_account_button"
+            android:text="解除绑定"
+            android:textColor="@color/white"/>
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/bt_weixin_change"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15px"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bt_weixin_change"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30px"
+            android:text="（维 180****5555）"
+            android:textColor="@color/white"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

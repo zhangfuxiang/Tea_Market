@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/txt_action_selector"
+        android:gravity="center"
+        android:text="收货人信息为当前信息"
+        android:textColor="#666666"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@color/line"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

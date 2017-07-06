@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lift_marg">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginLeft="@dimen/lift_marg"
+            android:layout_height="@dimen/px_120"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/common_size"
+                android:layout_width="@dimen/px_280"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="收件人" />
+
+            <EditText
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_marginLeft="@dimen/lift_marg"
+            android:background="@color/line"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginLeft="@dimen/lift_marg"
+            android:layout_height="@dimen/px_120"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/common_size"
+                android:layout_width="@dimen/px_280"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="手机号码" />
+
+            <EditText
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_marginLeft="@dimen/lift_marg"
+            android:background="@color/line"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginLeft="@dimen/lift_marg"
+            android:layout_height="@dimen/px_120"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/common_size"
+                android:layout_width="@dimen/px_280"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="所在地区" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                >
+            <TextView
+                android:layout_weight="6"
+                android:clickable="true"
+                android:id="@+id/choose_adress"
+                android:textSize="@dimen/common_size"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text="请选择"
+                />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/ic_in2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px_80"
+                />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_marginLeft="@dimen/lift_marg"
+            android:background="@color/line"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginLeft="@dimen/lift_marg"
+            android:layout_height="@dimen/px_240"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="top"
+                android:textSize="@dimen/common_size"
+                android:layout_width="@dimen/px_280"
+                android:layout_height="@dimen/px_120"
+                android:gravity="center_vertical"
+                android:text="详细地址" />
+
+            <EditText
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_marginLeft="@dimen/lift_marg"
+            android:background="@color/line"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

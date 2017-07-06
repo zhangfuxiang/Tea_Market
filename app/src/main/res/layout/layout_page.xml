@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.delta.smt.ui.find.collectionInfo.ximageview.XImageView
+        android:id="@+id/xImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        app:doubleType="fitImageMinViewMax"
+        app:initType="fitViewMinImageMin" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_gravity="center" />
+
+</com.zhy.autolayout.AutoFrameLayout>

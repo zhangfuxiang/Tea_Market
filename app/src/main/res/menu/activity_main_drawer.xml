@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="贴片机预警">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="接料超领预警" />
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="超领清单" />
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item android:title="叠送一体机预警">
+            <menu>
+                <item
+                    android:id="@+id/folding_machine_waring"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="叠送一体机预警" />
+                <item
+                    android:id="@+id/warehouse"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="PCB库房" />
+
+
+            </menu>
+        </item>
+
+
+        <item android:title="锡膏机预警">
+            <menu>
+                <item
+                    android:id="@+id/nav_pasteAlarm"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="锡膏机预警" />
+
+                <item
+                    android:id="@+id/nav_jigRoomAlarm"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="治工具房预警" />
+            </menu>
+        </item>
+
+        <item android:title="仓库房">
+            <menu>
+                <item
+                    android:id="@+id/nav_slideshow"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="仓库房备料" />
+                <item
+                    android:id="@+id/nav_manage"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="仓库房退料" />
+            </menu>
+        </item>
+
+        <item android:title="Feeder缓存区发料">
+            <menu>
+                <item
+                    android:id="@+id/feeder"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Feeder缓存区发料" />
+            </menu>
+        </item>
+
+
+        <item android:title="其他预警">
+            <menu>
+                <item
+                    android:id="@+id/other_warning"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="其他预警" />
+            </menu>
+        </item>
+
+    </group>
+
+</menu>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_start_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="31px"
+        android:background="#999999" />
+
+    <EditText
+        android:id="@+id/et_your_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:hint="您的店铺名"
+        android:inputType="text"
+        android:paddingLeft="43px"
+        android:paddingRight="43px"
+        android:textSize="38px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="43px"
+        android:layout_marginRight="43px"
+        android:background="#999999" />
+
+    <EditText
+        android:id="@+id/et_your_shop_address"
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:paddingLeft="43px"
+        android:paddingRight="43px"
+        android:textSize="38px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="31px"
+        android:background="#999999" />
+
+    <EditText
+        android:id="@+id/et_your_shop_owner_name"
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:hint="联系人姓名"
+        android:inputType="textPersonName"
+        android:paddingLeft="43px"
+        android:paddingRight="43px"
+        android:textSize="38px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="43px"
+        android:layout_marginRight="43px"
+        android:background="#999999" />
+
+    <EditText
+        android:id="@+id/et_your_shop_owner_phone"
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:hint="联系人电话"
+        android:inputType="phone"
+        android:paddingLeft="43px"
+        android:paddingRight="43px"
+        android:textSize="38px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+</com.zhy.autolayout.AutoLinearLayout>

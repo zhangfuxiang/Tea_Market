@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_start_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="30px"
+        android:background="#CCCCCC" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="258px"
+        android:background="#FFFFFF">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_tea_picture"
+            android:layout_width="154px"
+            android:layout_height="154px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="43px"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_tea_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="37px"
+            android:layout_toRightOf="@id/iv_tea_picture"
+            android:includeFontPadding="false"
+            android:text="武夷岩茶 ZHP0860-1 25 2016春茶"
+            android:textColor="#999999"
+            android:textSize="37px" />
+
+        <TextView
+            android:id="@+id/tv_now_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_tea_name"
+            android:layout_below="@id/tv_tea_name"
+            android:layout_marginTop="33px"
+            android:includeFontPadding="false"
+            android:text="当前出价：¥438.00"
+            android:textColor="#FF6000"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/tv_remain_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_tea_name"
+            android:layout_below="@id/tv_now_price"
+            android:layout_marginTop="33px"
+            android:includeFontPadding="false"
+            android:text="拍卖倒计时：00天15时25分49秒"
+            android:textColor="@color/base_color"
+            android:textSize="34px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="30px"
+        android:background="#CCCCCC" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_bottom_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="43px"
+            android:gravity="center"
+            android:text="底价：¥50.00"
+            android:textColor="#999999"
+            android:textSize="37px" />
+
+        <TextView
+            android:id="@+id/tv_every_add_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22px"
+            android:gravity="center"
+            android:text="叫价涨幅：¥20.00"
+            android:textColor="#999999"
+            android:textSize="37px" />
+
+        <TextView
+            android:id="@+id/tv_after_price_delay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22px"
+            android:gravity="center"
+            android:text="叫价后延迟：5分钟"
+            android:textColor="#999999"
+            android:textSize="34px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="30px"
+        android:background="#CCCCCC" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="43px"
+            android:gravity="center"
+            android:text="¥"
+            android:textColor="#999999"
+            android:textSize="37px" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_delete_my_price"
+                android:layout_width="127px"
+                android:layout_height="127px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="40px"
+                android:src="@drawable/ic_cha_delete" />
+
+            <EditText
+                android:id="@+id/et_my_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_delete_my_price"
+                android:background="#FFFFFF"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#FF6000"
+                android:textSize="43px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="43px"
+        android:paddingRight="43px"
+        android:paddingTop="30px"
+        android:text="提示：每次出价你可以输入更高的价格；但最终的出价必须大于或等于当前出价+叫价涨幅。"
+        android:textColor="#999999"
+        android:textSize="34px" />
+</com.zhy.autolayout.AutoLinearLayout>

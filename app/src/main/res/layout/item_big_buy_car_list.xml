@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30px"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="125px"
+            android:layout_marginLeft="45px"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="45px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/smallRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tv_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="125px"
+            android:layout_marginLeft="43px"
+            android:gravity="center_vertical"
+            android:text="共0件商品"
+            android:textColor="#333333"
+            android:textSize="37px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="125px"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_up_total_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="合计："
+                android:textColor="#333333"
+                android:textSize="37px" />
+
+            <TextView
+                android:id="@+id/tv_up_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="¥0"
+                android:textColor="#FF6000"
+                android:textSize="37px" />
+
+            <TextView
+                android:id="@+id/tv_freight_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="43px"
+                android:includeFontPadding="false"
+                android:text="配送费："
+                android:textColor="#333333"
+                android:textSize="37px" />
+
+            <TextView
+                android:id="@+id/tv_freight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="43px"
+                android:includeFontPadding="false"
+                android:text="¥0.00"
+                android:textColor="#FF6000"
+                android:textSize="37px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC" />
+</com.zhy.autolayout.AutoLinearLayout>

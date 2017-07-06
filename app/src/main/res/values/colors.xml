@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--btn-selector-->
+    <color name="save_unpressed">#01aff2</color>
+    <color name="save_pressed">#018bc0</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="white">#fff</color>
+    <color name="greed">#11ae52</color>
+    <color name="line">#CFD9D1</color>
+    <color name="red">#E1290A</color>
+    <color name="base_color">#307142</color>
+    <color name="orange">#FFD45F</color>
+    <color name="bac">#f2f2f4</color>
+    <color name="c_FBEAAF">#febaaf</color>
+    <color name="c_333333">#333333</color>
+    <color name="c_666666">#666666</color>
+    <color name="back">#DCDCDC</color>
+    <color name="txt_color_333">#333333</color>
+    <color name="txt_color_999">#999999</color>
+    <color name="yellow">#FFE32B</color>
+    <color name="c_F2F2F4">#F2F2F4</color>
+
+    <color name="c_D7D7D7">#D7D7D7</color>
+    <color name="c_3B3B3B">#3B3B3B</color>
+    <color name="c_6c9772">#6c9772</color>
+    <color name="c_F46526">#F46526</color>
+    <color name="c_FFFFFF">#FFFFFF</color>
+    <color name="txt_color999">#999999</color>
+</resources>
+

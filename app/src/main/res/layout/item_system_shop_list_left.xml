@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:paddingBottom="16px"
+    android:paddingTop="16px">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="635px"
+        android:layout_marginRight="16px"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CCCCCC" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="65">
+
+            <ImageView
+                android:id="@+id/iv_commdity_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CCCCCC" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="23">
+
+            <TextView
+                android:id="@+id/tv_show_commdity_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23px"
+                android:layout_marginRight="23px"
+                android:layout_marginTop="29px"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="武夷岩茶 ZHP0860-125 2016春茶"
+                android:textColor="#333333"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/tv_showNowPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="23px"
+                android:includeFontPadding="false"
+                android:text="当前价：¥438.00"
+                android:textColor="#FF6000"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/tv_sale_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20px"
+                android:layout_marginRight="23px"
+                android:includeFontPadding="false"
+                android:text="销量18"
+                android:textColor="#999999"
+                android:textSize="34px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CCCCCC" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
+

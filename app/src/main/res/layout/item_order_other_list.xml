@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="258px"
+    android:background="#FFFFFF">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_order_other_item_picture"
+        android:layout_width="197px"
+        android:layout_height="197px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="45px"
+        android:layout_toRightOf="@id/cb_check"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_order_other_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="45px"
+        android:layout_toRightOf="@id/iv_order_other_item_picture"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:maxWidth="693px"
+        android:text="老开心茶馆"
+        android:textColor="#333333"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/tv_order_other_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_order_other_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30px"
+        android:layout_toRightOf="@id/tv_order_other_name"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:minWidth="115px"
+        android:text="本店"
+        android:textColor="@color/base_color"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/tv_other_address"
+        android:layout_width="609px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_order_other_name"
+        android:layout_below="@id/tv_order_other_name"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/iv_order_other_item_picture"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:text="地址"
+        android:textColor="#999999"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/tv_other_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_order_other_name"
+        android:layout_below="@id/tv_other_address"
+        android:includeFontPadding="false"
+        android:text="距离"
+        android:textColor="#999999"
+        android:textSize="34px"
+        android:visibility="gone" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30px"
+        android:layout_marginRight="45px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="¥"
+            android:textColor="#FF6000"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/tv_order_other_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="78"
+            android:textColor="#FF6000"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="元/人"
+            android:textColor="#999999"
+            android:textSize="34px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="45px"
+        android:background="#CCCCCC" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

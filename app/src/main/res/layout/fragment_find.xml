@@ -1,0 +1,554 @@
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context="com.delta.smt.ui.Personal.PersonalFragment">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_bar_start_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCCCCC" />
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="580px" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400px"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:paddingBottom="29px"
+                    android:paddingTop="29px">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/enter_auction_house"
+                            android:layout_width="236px"
+                            android:layout_height="78px"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/btn_auction_selector"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="进入拍卖行"
+                                android:textColor="@color/base_color"
+                                android:textSize="34px" />
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:id="@+id/auction_up_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@id/enter_auction_house"
+                            android:layout_marginBottom="43px">
+
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="43px">
+
+                                <ImageView
+                                    android:id="@+id/ic_auction_house"
+                                    android:layout_width="70px"
+                                    android:layout_height="70px"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_cha_auction_bank" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="20px"
+                                    android:layout_toRightOf="@id/ic_auction_house"
+                                    android:text="拍卖行"
+                                    android:textColor="#333333"
+                                    android:textSize="43px" />
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_auction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="43px"
+                                android:includeFontPadding="false"
+                                android:text="珍品 孤品\n值得你拥有"
+                                android:textColor="#666666"
+                                android:textSize="34px" />
+
+                            <ImageView
+                                android:layout_width="180px"
+                                android:layout_height="180px"
+                                android:layout_alignBottom="@id/tv_auction"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="29px"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_cha_auction_yello" />
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#CCCCCC" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/line2_recommend1"
+                                android:layout_width="158px"
+                                android:layout_height="158px"
+                                android:layout_marginLeft="29px"
+                                android:scaleType="fitCenter" />
+
+                            <TextView
+                                android:id="@+id/tv_line2_recommend1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="29px"
+                                android:layout_marginRight="29px"
+                                android:layout_toRightOf="@id/line2_recommend1"
+                                android:text=""
+                                android:textColor="#333333"
+                                android:textSize="34px" />
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/line2_recommend2"
+                                android:layout_width="158px"
+                                android:layout_height="158px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="29px"
+                                android:scaleType="fitCenter" />
+
+                            <TextView
+                                android:id="@+id/tv_line2_recommend2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="29px"
+                                android:layout_marginRight="29px"
+                                android:layout_toRightOf="@id/line2_recommend2"
+                                android:text=""
+                                android:textColor="#333333"
+                                android:textSize="34px" />
+                        </com.zhy.autolayout.AutoRelativeLayout>
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCCCCC" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="30px"
+                    android:background="#CCCCCC" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400px"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:paddingBottom="29px"
+                    android:paddingTop="29px">
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/line3_recommend1"
+                                android:layout_width="158px"
+                                android:layout_height="158px"
+                                android:layout_marginLeft="29px"
+                                android:scaleType="fitCenter" />
+
+
+                            <TextView
+                                android:id="@+id/tv_line3_recommend1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="29px"
+                                android:layout_marginRight="29px"
+                                android:layout_toRightOf="@id/line3_recommend1"
+                                android:text=""
+                                android:textColor="#333333"
+                                android:textSize="34px" />
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/line3_recommend2"
+                                android:layout_width="158px"
+                                android:layout_height="158px"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="29px"
+                                android:scaleType="fitCenter" />
+
+                            <TextView
+                                android:id="@+id/tv_line3_recommend2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="29px"
+                                android:layout_marginRight="29px"
+                                android:layout_toRightOf="@id/line3_recommend2"
+                                android:text=""
+                                android:textColor="#333333"
+                                android:textSize="34px" />
+                        </com.zhy.autolayout.AutoRelativeLayout>
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#CCCCCC" />
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/enter_subject_activity"
+                            android:layout_width="236px"
+                            android:layout_height="78px"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/btn_subject_selector"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="进入主题活动"
+                                android:textColor="@color/base_color"
+                                android:textSize="34px" />
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:id="@+id/subject_activity_up_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@id/enter_subject_activity"
+                            android:layout_marginBottom="43px">
+
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="43px">
+
+                                <ImageView
+                                    android:id="@+id/ic_subject_activity"
+                                    android:layout_width="70px"
+                                    android:layout_height="70px"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_cha_consult" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="20px"
+                                    android:layout_toRightOf="@id/ic_subject_activity"
+                                    android:text="主题活动"
+                                    android:textColor="#333333"
+                                    android:textSize="43px" />
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_subject"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="43px"
+                                android:includeFontPadding="false"
+                                android:text="线下沙发\n以茶会友"
+                                android:textColor="#666666"
+                                android:textSize="34px" />
+
+                            <ImageView
+                                android:layout_width="180px"
+                                android:layout_height="180px"
+                                android:layout_alignBottom="@id/tv_subject"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="29px"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_cha_line_activity" />
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCCCCC" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="30px"
+                    android:background="#CCCCCC" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="471px"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="125px"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="12px"
+                            android:layout_height="45px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="43px"
+                            android:background="@color/base_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="24px"
+                            android:text="系统商城"
+                            android:textColor="#333333"
+                            android:textSize="43px" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#CCCCCC" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:id="@+id/btn_tea_leaf"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="118px"
+                                    android:layout_height="118px"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="43px"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_cha_tea" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="218px"
+                                    android:text="茶叶汇"
+                                    android:textColor="#666666"
+                                    android:textSize="43px" />
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <View
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#CCCCCC" />
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:id="@+id/btn_tea_tools"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="118px"
+                                    android:layout_height="118px"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="43px"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_cha_teaset" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="218px"
+                                    android:text="茶器具"
+                                    android:textColor="#666666"
+                                    android:textSize="43px" />
+                            </com.zhy.autolayout.AutoRelativeLayout>
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="#CCCCCC" />
+
+                        <com.zhy.autolayout.AutoLinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:id="@+id/btn_tea_food"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="118px"
+                                    android:layout_height="118px"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="43px"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_cha_dessert" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="218px"
+                                    android:text="茶点茶食"
+                                    android:textColor="#666666"
+                                    android:textSize="43px" />
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <View
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#CCCCCC" />
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:id="@+id/btn_tea_about"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="118px"
+                                    android:layout_height="118px"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="43px"
+                                    android:scaleType="fitCenter"
+                                    android:src="@mipmap/ic_tea_about" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="218px"
+                                    android:text="茶相关"
+                                    android:textColor="#666666"
+                                    android:textSize="43px" />
+                            </com.zhy.autolayout.AutoRelativeLayout>
+                        </com.zhy.autolayout.AutoLinearLayout>
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="30px"
+                    android:background="#CCCCCC" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCCCCC" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </ScrollView>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoFrameLayout>

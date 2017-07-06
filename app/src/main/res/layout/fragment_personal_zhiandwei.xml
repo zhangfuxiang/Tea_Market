@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginRight="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_30"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/backage_zhi" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_marginTop="@dimen/px_10"
+            android:src="@drawable/ic_cha_zhifubao"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝账户"
+            android:layout_marginLeft="@dimen/px_140"
+            android:textSize="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_40"
+            android:textColor="@color/white"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginBottom="@dimen/px_40"
+            android:text="(微 12000000000)"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginRight="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_30"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/backage_weixin" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_marginTop="@dimen/px_10"
+            android:src="@drawable/ic_cha_weixin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信账户"
+            android:layout_marginLeft="@dimen/px_140"
+            android:textSize="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_40"
+            android:textColor="@color/white"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginBottom="@dimen/px_40"
+            android:text="(微 12000000000)"/>
+    </FrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

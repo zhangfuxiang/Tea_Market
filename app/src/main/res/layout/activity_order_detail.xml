@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/homepage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:background="#DCDCDC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/orange"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@mipmap/car2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="买家已付款，等待发货"
+                    android:textSize="15sp" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@mipmap/adress"
+
+                    />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="收货人:"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="王先生" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="@dimen/px_140"
+                            android:text="13869854869"
+                            android:textSize="15sp" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="收货地址:" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="北京市朝阳区望京写字楼大厦" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_50"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:gravity="center_vertical"
+                    android:text="订单号003158246888958"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:background="@color/line" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/order_detail_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_40" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="@dimen/px_40"
+                        android:gravity="center_vertical"
+                        android:text="商品总价:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="@dimen/px_40"
+                        android:text="配送费:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/px_40"
+                        android:layout_marginTop="-25dp"
+                        android:text="￥0.00"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/px_40"
+                        android:layout_marginTop="-50dp"
+                        android:gravity="center_vertical"
+                        android:text="￥1752.00"
+                        android:textColor="@color/red" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:background="@color/line" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="@dimen/px_40"
+                        android:text="总价:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/px_40"
+                        android:layout_marginTop="-25dp"
+                        android:text="￥0.00"
+                        android:textColor="@color/red" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/line" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="@dimen/px_50"
+                android:background="@color/line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:text="支付方式:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/px_50"
+                    android:layout_marginTop="-25dp"
+                    android:text="微信支付" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="@dimen/px_50"
+                android:background="@color/line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:gravity="center_vertical"
+                    android:text="订单号：003158246888958" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:gravity="center_vertical"
+                    android:text="下单时间：2016-05-09" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/px_40"
+                    android:gravity="center_vertical"
+                    android:text="付款事件：2016-11-30" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="@dimen/px_50"
+                android:background="@color/line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/textView5"
+                        android:layout_width="300px"
+                        android:layout_height="35dp"
+                        android:background="@drawable/btn_auction_selector"
+                        android:gravity="center"
+                        android:text="请联系供应商发货"
+                        android:textSize="@dimen/txt_size" />
+
+                    <Button
+                        android:id="@+id/confrim_push"
+                        android:layout_width="160px"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="@dimen/px_40"
+                        android:background="@drawable/btn_auction_selector"
+                        android:gravity="center"
+                        android:text="确认发货"
+                        android:textColor="@color/greed"
+                        android:textSize="@dimen/txt_size" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

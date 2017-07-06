@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tv_product_para_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:paddingLeft="43px"
+            android:text=""
+            android:textColor="#666666"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_product_para"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:paddingLeft="347px"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="43px"
+        android:background="#CCCCCC" />
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="660px"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvCommodityBigClassify"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="288"
+            android:background="#FFFFFF" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#CCCCCC" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvCommoditySmallClassify"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="462"
+            android:background="#FFFFFF" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/popup_other_region"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

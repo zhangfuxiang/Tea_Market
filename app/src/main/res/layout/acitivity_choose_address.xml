@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_start_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="131px">
+
+        <EditText
+            android:id="@+id/et_village"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="26px"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:layout_marginTop="26px"
+            android:background="@drawable/et_village_border"
+            android:gravity="center"
+            android:hint="输入小区名称"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:textColor="#333333"
+            android:textColorHint="#666666"
+            android:textSize="34px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:gravity="center_vertical"
+        android:paddingLeft="45px"
+        android:text="当前定位地址"
+        android:textColor="#666666"
+        android:textSize="34px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:background="@drawable/btn_common_selector">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_fixed_village_location" />
+
+            <TextView
+                android:id="@+id/et_fixed_village_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="嘉美中心写字楼"
+                android:textColor="@color/base_color"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:gravity="center_vertical"
+        android:paddingLeft="45px"
+        android:text="收货地址"
+        android:textColor="#666666"
+        android:textSize="34px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddee3" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</com.zhy.autolayout.AutoLinearLayout>
